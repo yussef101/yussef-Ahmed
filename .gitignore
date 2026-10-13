@@ -1,0 +1,6 @@
+build/
+out/
+node_modules/
+assets/voices/
+__pycache__/
+*.pyc

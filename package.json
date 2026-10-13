@@ -1,0 +1,10 @@
+{
+  "name": "choo-choo-learning-train",
+  "private": true,
+  "type": "module",
+  "description": "Procedural 3D nursery-rhyme video renderer",
+  "dependencies": {
+    "playwright-core": "1.56.0",
+    "three": "0.169.0"
+  }
+}

@@ -1,0 +1,6 @@
+numpy
+scipy
+soundfile
+pyworld
+piper-tts
+pillow
