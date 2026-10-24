@@ -1,6 +1,6 @@
 # 初心者二人がフォートナイトやってみた！ — YouTube 用テキスト
 
-サムネイル: `thumbnail.png`（1280×720）。文字や色を変えたいときは `thumbnail.html` を編集する。
+サムネイル: `thumbnail-gameplay.png`（ゲーム画面版）と `thumbnail.png`（イラスト版）、どちらも 1280×720。文字や色を変えたいときは `.html` を編集する。
 
 ## タイトル
 

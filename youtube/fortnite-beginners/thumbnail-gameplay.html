@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>初心者二人がフォートナイト サムネ（ゲーム画面）</title>
+<style>
+  @font-face { font-family: "Dela Gothic One"; src: url("https://fonts.gstatic.com/s/delagothicone/v19/hESp6XxvMDRA-2eD0lXpDa6QkBAGRQ.ttf"); }
+  @font-face { font-family: "M PLUS Rounded 1c"; font-weight: 900; src: url("https://fonts.gstatic.com/s/mplusrounded1c/v22/VdGBAYIAV6gnpUpoWwNkYvrugw9RuM0C45sK.ttf"); }
+  html, body { margin: 0; padding: 0; background: #111; }
+  svg { display: block; }
+  .dela { font-family: "Dela Gothic One", sans-serif; }
+  .round { font-family: "M PLUS Rounded 1c", sans-serif; font-weight: 900; }
+</style>
+</head>
+<body>
+<svg id="thumb" width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0630" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#0a0630" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffb7a"/>
+      <stop offset="0.5" stop-color="#ffe100"/>
+      <stop offset="1" stop-color="#ff9d00"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6a6a"/>
+      <stop offset="1" stop-color="#e8001c"/>
+    </linearGradient>
+
+    <!-- 初心者マーク (wakaba mark) -->
+    <g id="wakaba">
+      <path d="M -22 -24 L 0 -12 L 0 26 L -22 12 Z" fill="#ffe600" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M 22 -24 L 0 -12 L 0 26 L 22 12 Z" fill="#14a83b" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- gameplay screenshot (cropped to 16:9 and brightened) -->
+  <image href="gameplay-bg.jpg" x="0" y="0" width="1280" height="720"/>
+  <rect width="1280" height="720" fill="url(#shade)"/>
+
+  <!-- beginner badge -->
+  <g transform="translate(978 22) rotate(3)">
+    <rect width="292" height="74" rx="16" fill="#ffffff" stroke="#1a1a1a" stroke-width="6"/>
+    <use href="#wakaba" transform="translate(48 38) scale(1.05)"/>
+    <text x="178" y="53" class="round" font-size="42" text-anchor="middle" fill="#14a83b">初見プレイ</text>
+  </g>
+
+  <!-- ?! accent -->
+  <g transform="translate(988 392) rotate(12)">
+    <path d="M 0 -96 L 22 -48 L 70 -78 L 56 -26 L 104 -14 L 62 14 L 92 58 L 38 48 L 30 100 L 0 62 L -30 100 L -38 48 L -92 58 L -62 14 L -104 -14 L -56 -26 L -70 -78 L -22 -48 Z" fill="#ff2a3d" stroke="#ffffff" stroke-width="8" stroke-linejoin="round"/>
+    <text y="34" class="dela" font-size="92" text-anchor="middle" fill="#ffe600" stroke="#1a1a1a" stroke-width="12" stroke-linejoin="round" paint-order="stroke">!?</text>
+  </g>
+
+  <!-- hook tag -->
+  <g transform="translate(1046 668) rotate(-2)">
+    <rect x="-246" y="-52" width="520" height="104" rx="14" fill="#1a1a1a" stroke="#ffffff" stroke-width="6"/>
+    <text x="-6" y="18" class="round" font-size="52" text-anchor="middle" fill="#ffe600">ビクロイいける…!?</text>
+  </g>
+
+  <!-- ===== main text ===== -->
+  <g text-anchor="middle" stroke-linejoin="round" stroke-linecap="round">
+    <g class="dela" font-size="84" transform="translate(320 205) rotate(-4)">
+      <text stroke="#1a1a1a" stroke-width="28">初心者二人が</text>
+      <text fill="#ffffff" stroke="#ffffff" stroke-width="2">初心者二人が</text>
+    </g>
+    <g class="dela" font-size="94" transform="translate(352 355) rotate(-4)">
+      <text stroke="#ffffff" stroke-width="40">フォートナイト</text>
+      <text stroke="#2a0a4a" stroke-width="24">フォートナイト</text>
+      <text fill="url(#gold)">フォートナイト</text>
+    </g>
+    <g class="dela" font-size="104" transform="translate(338 515) rotate(-4)">
+      <text stroke="#1a1a1a" stroke-width="40">やってみた！</text>
+      <text stroke="#ffffff" stroke-width="20">やってみた！</text>
+      <text fill="url(#red)">やってみた！</text>
+    </g>
+  </g>
+</svg>
+</body>
+</html>
